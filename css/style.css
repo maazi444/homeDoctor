@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,800;0,900;1,800;1,900&display=swap");
+/* font-family: 'Raleway', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  color: #535353;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  background: #181818;
+}
+
+main * {
+  color: #fff;
+}
+
+/* ----------------- Header ------------------- */
+
+header {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  border-bottom: 1px solid #535353;
+}
+
+.brandLogo {
+  height: 100%;
+}
+
+.brandLogo img {
+  height: 100%;
+}
+
+.menuLinks ul {
+  display: flex;
+  align-items: baseline;
+}
+
+.menuLinks ul li {
+  margin: 0 1rem;
+}
+
+.menuLinks ul li a {
+  text-transform: uppercase;
+  transition: 0.3s;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.menuLinks ul li a:hover {
+  color: #ffd700;
+}
+
+.donate-btn a {
+  padding: 0.5rem 1rem;
+  background-color: #ffd700;
+  border-radius: 5px;
+  transition: 0.3s;
+  color: #333;
+  display: block;
+  transform: skew(-10deg);
+}
+
+.donate-btn a:hover {
+  color: #fff !important;
+  background-color: #ebc700;
+}
+
+/* ----------------- Search Bar ------------------ */
+
+.searchBar {
+  width: 100%;
+  height: 10vh;
+  /* border: 1px solid #535353; */
+  background-color: #ffd700;
+  /* margin-top: 1rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.d-search-bar {
+  background-color: #3d3d3d;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.search-box * {
+  color: #333;
+}
+
+#s_box {
+  width: 25rem;
+  padding: 0.3rem 0.5rem;
+  font-size: 1.1rem;
+  background: transparent;
+  border: 1px solid #8d8d8d;
+  border-radius: 3px;
+  outline: none;
+  margin-left: 1rem;
+}
+
+#main {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3rem;
+}
+
+#main img {
+  width: 20%;
+}
+
+#main h1 {
+  text-transform: uppercase;
+  font-size: 53px;
+  text-align: center;
+}
+
+.sub-main {
+  width: 100%;
+  height: 100%;
+  padding: 1rem 3rem;
+}
+
+.list-section {
+  padding: 1rem;
+  width: 25%;
+  height: 100%;
+  background-color: #181818;
+  border: 1px solid #333;
+  border-radius: 5px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.desc-section {
+  width: 75%;
+  height: 100%;
+  background-color: #181818;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-left: 1rem;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+#main ul li {
+  border: 1px solid #333;
+  border-radius: 4px;
+  background-color: #333;
+  width: 100%;
+  margin: 0.3rem 0;
+  padding: 0.5rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+#main ul li:hover {
+  transform: translateY(-3px);
+}
+
+.desc-default {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* -------------- About Page --------------- */
+
+.about-wrap {
+  width: 100%;
+  height: 90vh;
+  background: url("../assets/wavebg.svg") no-repeat bottom center;
+  background-size: contain;
+  background-position: fixed;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.about-app {
+  width: 100%;
+  height: 100%;
+  padding: 2rem 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.g-container {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  overflow: scroll;
+  overflow-x: hidden;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  backdrop-filter: blur(0.5rem);
+  box-shadow: 5px 3px 17px rgba(0, 0, 0, 0.2);
+  border-left: 2px solid rgba(255, 255, 255, 0.123);
+  border-top: 2px solid rgba(255, 255, 255, 0.123);
+  border-right: 1px solid rgba(255, 255, 255, 0.123);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.123);
+}
+
+.g-container h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 56px;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.g-container p {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.about-para {
+  width: 100%;
+  padding: 2rem 5rem;
+}
+
+.about-para p {
+  color: #fff;
+  text-align: justify;
+  word-spacing: 3px;
+  line-height: 25px;
+  font-size: 16px;
+  margin-top: 1rem;
+  display: flex;
+  align-items: flex-start;
+  text-transform: none !important;
+}
+
+b {
+  margin-left: 1rem;
+}
+
+/* -------------- Scroll Bar --------------- */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border: 1px solid #888;
+}

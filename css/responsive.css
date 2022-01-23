@@ -1,0 +1,115 @@
+@media only screen and (max-width: 1100px) {
+  .adminContent {
+    flex-direction: column;
+  }
+
+  .adminSetting {
+    width: 100%;
+    height: 30vh;
+    justify-content: space-evenly;
+  }
+
+  .as1 ul {
+    display: flex;
+  }
+
+  .as1 ul li {
+    margin: 0 1rem;
+  }
+
+  .acRight {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+  }
+
+  .acRight table {
+    text-align: left;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  #main h1 {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  #main {
+    padding: 0 0.5rem;
+  }
+
+  .sub-main {
+    padding: 1rem 0.5rem;
+  }
+
+  .output-wrap {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .desc-section {
+    width: 100%;
+    height: 80vh;
+    overflow: auto;
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  .list-section {
+    width: 100%;
+    height: 40vh;
+    overflow-y: auto;
+  }
+
+  .about-para {
+    padding: 1rem 0.5rem;
+  }
+
+  .about-app {
+    padding: 2rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  header {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 30vh;
+  }
+
+  header img {
+    width: 120px;
+    height: auto !important;
+  }
+
+  .searchBar {
+    height: 15vh;
+  }
+
+  .search-box {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .menuLinks ul {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  #s_box {
+    width: 15rem;
+    margin-left: 0;
+  }
+
+  .donate-btn a {
+    transform: skew(0deg);
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}

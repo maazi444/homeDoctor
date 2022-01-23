@@ -1,0 +1,277 @@
+:root {
+  --text-color: #33312d;
+  --border-color: #d9d9d9;
+  --default-size: 1vw;
+  --danger-color: #a80000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-color);
+  text-decoration: none;
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background-color: #181818;
+}
+
+.container * {
+  color: #fff;
+}
+
+form {
+  margin-top: 1vw;
+  width: 100%;
+}
+
+input {
+  margin: 10px 0;
+  display: inline-block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+  display: block;
+  outline: none;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #ffd700;
+  width: 17vw;
+  color: #fff;
+  font-size: 16px;
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="submit"] {
+  border: 1px solid var(--border-color);
+  background: none;
+  padding: 8px 30px;
+  font-size: 16px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: block;
+}
+
+input[type="submit"]:hover {
+  border: 1px solid #ffd700;
+  color: #ffd700;
+}
+
+input[type="file"] {
+  border: 1px solid #333;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+}
+
+.prodImgInput {
+  display: block;
+}
+
+.errorClass {
+  color: #f00;
+  font-size: 13px;
+}
+
+.controlPanelLogo {
+  width: 100%;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1vw;
+}
+
+.adminSetting {
+  width: 15%;
+  height: 80vh;
+  margin: 0 0.2vw;
+  padding: 2vw 0.5vw;
+  background-color: #333;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.adminContent {
+  width: 100%;
+  display: flex;
+  padding: 2vw;
+  padding-bottom: 1vw;
+}
+
+.as1 {
+  width: 100%;
+}
+
+.asHeading {
+  font-size: 1.4vw;
+  font-weight: 600;
+}
+
+.adminSetting ul li ul {
+  margin-left: 2vw;
+}
+
+.adminSetting ul li {
+  margin: 1vw 0;
+}
+
+.adminSetting ul li a {
+  cursor: pointer;
+}
+
+.adminSetting ul li a:hover {
+  transition: 0.3s;
+  color: #ffd700;
+}
+
+.asLogout {
+  padding: 0.4vw 1.5vw;
+  border: 2px solid transparent;
+  color: #333 !important;
+  font-weight: 600;
+  background-color: #ffd700;
+  border-radius: 48vw;
+  transition: 0.3s;
+}
+
+.asLogout:hover {
+  background-color: #e6c300;
+  color: #333 !important;
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.4);
+}
+
+.dashboardHeading {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+}
+
+.dashboardHeading i {
+  font-size: 1.7vw;
+}
+
+.acRight {
+  width: 85%;
+  min-height: 80vh;
+  margin: 0 0.2vw;
+  padding: 2vw;
+  background-color: #333;
+  border-radius: 12px;
+}
+
+.acrHeading {
+  font-weight: 600;
+}
+
+.product-category {
+  display: block;
+  outline: none;
+  background: #f1f1f1;
+  border: none;
+  border-bottom: 1px solid #3172ff;
+  width: 17vw;
+  color: #333;
+  font-size: 16px;
+  padding: 5px 10px;
+  transition: 0.3s;
+  margin: 0.5vw 0;
+}
+
+.acRight table {
+  text-align: center;
+  width: 70%;
+  border-collapse: collapse;
+  margin-top: 5vh;
+  border: 1px solid var(--border-color);
+}
+
+th,
+td {
+  padding: 0.3vw 0.5vw;
+  border: 1px solid var(--border-color);
+}
+
+table a {
+  color: #f00;
+}
+
+.storeSettingSection {
+  margin-top: 2vw;
+}
+
+.storeSettingSection li {
+  margin: 1vw 0;
+}
+
+.storeSettingSection li a {
+  transition: 0.3s;
+}
+
+.storeSettingSection li a:hover {
+  color: #ffd700;
+}
+
+ul li a:hover i {
+  transition: 0.3s;
+  color: #ffd700;
+}
+
+i {
+  margin-right: 0.5vw;
+}
+
+.down-arrow {
+  margin-left: 0.5vw;
+}
+
+.down-arrow:hover {
+  color: #ffd700;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.rotate-arrow {
+  transform: rotate(180deg);
+}
+
+.bCatLink {
+  display: inline-block;
+  padding: 0.5vw;
+  border-radius: 5px;
+  margin-top: 1vw;
+  border: 1px solid var(--border-color);
+  transition: 0.3s;
+}
+
+.bCatLink:hover {
+  border: 1px solid #3172ff;
+  color: #3172ff;
+}
+
+.adminProdimg {
+  width: 100px;
+}
